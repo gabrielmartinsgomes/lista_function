@@ -5,11 +5,23 @@
     */
 
     //Entrada
+    let num = Number(prompt(`Informe um numero inteiro`));
+
 
 
     //Processamento
+    function fatorial(num) {
+    if (num == 1) {
+        return 1;
+    } else {
+        return num * fatorial(num - 1);
+    }
+}
 
 
     //Saída
+    
+    let fator = fatorial(num)
+    alert(`O fatorial desse numero é ${fator}`)
 
 </script>

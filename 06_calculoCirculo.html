@@ -8,11 +8,20 @@
     */
 
     //Entrada
+    let diametro = Number(prompt(`Informe o diametro de um circulo`).replace(",", "."));
 
 
     //Processamento
+    function area (diametro){
+        alert(`a área do circulo é: ${3.14 * (diametro/2)*(diametro/2)}`)
+    }
+    function perimetro(diametro){
+        alert(`o perimetro do circulo é: ${3.14*diametro}`)
+    }
 
 
     //Saída
+    area(diametro)
+    perimetro(diametro)
 
 </script>

@@ -7,11 +7,21 @@
     */
 
     //Entrada
-
+    let string = prompt(`Escreva uma string`).trim().toLowerCase();
+    let vogalQuant = 0;
 
     //Processamento
+    function vogais (string){
+        for(let i of string){
+            if(i == "a" ||i == "e" || i== "i" || i == "o" || i == "u"){
+                vogalQuant++
+            }
+        }
+        alert(`Essa string tem ${vogalQuant} vogais`);
+    }
 
 
     //Saída
+    vogais(string)
 
 </script>

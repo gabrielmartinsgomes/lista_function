@@ -6,11 +6,17 @@
     */
 
     //Entrada
+    let base = Number(prompt(`Informe a base de um triângulo`).replace(",", "."));
+    let altura = Number(prompt(`Informe a altura desse triângulo`).replace(",", "."))
 
 
     //Processamento
+    function area(base, altura){
+        alert(`Esse triângulo tem uma área de: ${(base * altura) / 2}`)
+    }
 
 
     //Saída
+    area(base, altura);
 
 </script>
