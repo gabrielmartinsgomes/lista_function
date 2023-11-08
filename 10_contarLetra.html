@@ -6,11 +6,23 @@
     */
 
     //Entrada
+    let frase = prompt(`Informe uma frase`).trim().toLowerCase();
+    let letra = prompt(`Informe uma letra`).trim().toLowerCase();
+    let letraQuant = 0;
 
 
     //Processamento
+    function contem (frase, letra){
+        for(let i of frase){
+            if (i == letra){
+                letraQuant++
+            }
+        }
+        alert(`Essa frase contém a letra "${letra}" ${letraQuant} vezes`);
+    }
 
 
     //Saída
+    contem(frase, letra)
 
 </script>
